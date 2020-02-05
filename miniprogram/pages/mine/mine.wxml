@@ -1,0 +1,32 @@
+<!--pages/mine/mine.wxml-->
+<view >
+  <view class='avatar-container-box' >
+  <view class='avatar-container'>
+			<image class="avatar" src="{{userInfo.avatarUrl}}" />
+      <view class='info-group'>
+        <text class='name'> {{userInfo.nickName}} </text>
+      </view>
+  </view>
+  </view>
+
+  <view class="opration-area">
+    <view wx:for="{{user_lists}}" wx:key="" class='whole-choose'bindtap='{{item.tap}}'>
+    <view class= 'choose-group'>
+		  <view class='choose'>{{item.title}}</view>
+      <image class='go' src='https://xinyuJiang.cn/static/img/go.png'></image>
+    </view>
+    </view>
+  </view>
+
+  <view class="opration-area">
+    <view wx:for="{{program_lists}}" wx:key="" class='whole-choose'bindtap='{{item.tap}}'>
+    <view class= 'choose-group' >
+		  <view class='choose'>{{item.title}}</view>
+      <image class='go' src='https://xinyuJiang.cn/static/img/go.png'></image>
+    </view>
+    </view>
+  </view>
+
+  <view style='height:50px;'/>
+
+</view>

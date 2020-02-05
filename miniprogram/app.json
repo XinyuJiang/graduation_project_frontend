@@ -1,0 +1,61 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/userConsole/userConsole",
+    "pages/storageConsole/storageConsole",
+    "pages/databaseGuide/databaseGuide",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/chooseLib/chooseLib",
+    "pages/openapi/openapi",
+    "pages/openapi/serverapi/serverapi",
+    "pages/openapi/callback/callback",
+    "pages/openapi/cloudid/cloudid",
+    "pages/im/im",
+    "pages/chat/chat",
+    "pages/prediction/prediction",
+    "pages/mine/mine",
+    "pages/im/room/room"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "罕见病诊断帮",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "tabBar": {
+    "color": "#5c5e63",
+    "selectedColor": "#5c5e63",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "img/navi-no.png",
+        "selectedIconPath": "img/navi-yes.png",
+        "text": "发现"
+      },
+      {
+        "pagePath": "pages/chat/chat",
+        "iconPath": "img/chat-no.png",
+        "selectedIconPath": "img/chat-yes.png",
+        "text": "咨询"
+      },
+      {
+        "pagePath": "pages/prediction/prediction",
+        "iconPath": "img/predict-no.png",
+        "selectedIconPath": "img/predict-yes.png",
+        "text": "检测"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "img/mine-no.png",
+        "selectedIconPath": "img/mine-yes.png",
+        "text": "我的"
+      }
+    ]
+  }
+}
