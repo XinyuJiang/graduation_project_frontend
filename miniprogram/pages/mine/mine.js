@@ -55,6 +55,7 @@ Page({
     wx.setNavigationBarTitle({
       title: '我的'
     })
+    console.log("globalData",app.globalData.userInfo)
     //获取user_id
     if (app.globalData.userInfo) {
       this.setData({

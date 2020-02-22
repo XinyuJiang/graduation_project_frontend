@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/news/news",
     "pages/userConsole/userConsole",
     "pages/storageConsole/storageConsole",
     "pages/databaseGuide/databaseGuide",
@@ -13,9 +14,10 @@
     "pages/openapi/cloudid/cloudid",
     "pages/im/im",
     "pages/chat/chat",
-    "pages/prediction/prediction",
     "pages/mine/mine",
-    "pages/im/room/room"
+    "pages/im/room/room",
+    "pages/takephoto/takephoto"
+
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -25,7 +27,6 @@
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json",
-  "style": "v2",
   "tabBar": {
     "color": "#5c5e63",
     "selectedColor": "#5c5e63",
@@ -34,6 +35,12 @@
     "list": [
       {
         "pagePath": "pages/index/index",
+        "iconPath": "img/predict-no.png",
+        "selectedIconPath": "img/predict-yes.png",
+        "text": "检测"
+      },
+      {
+        "pagePath": "pages/news/news",
         "iconPath": "img/navi-no.png",
         "selectedIconPath": "img/navi-yes.png",
         "text": "发现"
@@ -43,12 +50,6 @@
         "iconPath": "img/chat-no.png",
         "selectedIconPath": "img/chat-yes.png",
         "text": "咨询"
-      },
-      {
-        "pagePath": "pages/prediction/prediction",
-        "iconPath": "img/predict-no.png",
-        "selectedIconPath": "img/predict-yes.png",
-        "text": "检测"
       },
       {
         "pagePath": "pages/mine/mine",

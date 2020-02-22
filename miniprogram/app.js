@@ -33,60 +33,47 @@ App({
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
     var index = this.globalData.user_id
-    //console.log('没登陆', index)
-    //while()
-    // 登录
     wx.login({
       success: res => {
         if(res.code){
-          //console.log(res.code)
           this.globalData.code=res.code
           console.log('code:',this.globalData.code)
-         // 获取用户信息
-          wx.getSetting({
-            success: res => {
-              if (res.authSetting['scope.userInfo']) {
-                // 已经授权，可以直接调用 getUserInfo 获取头像昵称，不会弹框
-                wx.getUserInfo({
-                  success: res => {
-
-                    this.globalData.userInfo = res.userInfo
-                    console.log('用户信息获取成功')
-                    console.log(this.globalData.userInfo)
-                    if (this.userInfoReadyCallback) {
-                      this.userInfoReadyCallback(res)
-                    }
-
-                   // var that = this
-                    wx.request({
-                      url: domain + 'register/',
-                      data: {
-                        nickname: this.globalData.userInfo.nickName,
-                        portrait: this.globalData.userInfo.avatarUrl,
-                        code: this.globalData.code
-                      },
-                      method: 'POST',
-                      header: { 'content-type': 'application/x-www-form-urlencoded' },// 使用post时，这里的header不能是application/json
-                      success: res => {
-                        console.log('用户登录/注册状态', res.data.msg)
-                        this.globalData.isFirstCode = res.data.code
-                        this.globalData.session = res.data.data.session
-                        console.log('session', this.globalData.session)
-                        
-                        //var that = this
-                        console.log(this)
-                      }
-
-                    })
-                  }
-                })
-              }
-            }
-
-
-        })
-      }
+        }
       }
     })
-  }
-})
+  },
+    //console.log('没登陆', index)
+    //while()
+    // 登录
+    // var that = this
+
+  UserLogin:function(){
+        wx.request({
+        url: domain + 'register/',
+          data: {
+          nickname: this.globalData.userInfo.nickName,
+          portrait: this.globalData.userInfo.avatarUrl,
+          code: this.globalData.code
+          },
+          method: 'POST',
+          header: { 'content-type': 'application/x-www-form-urlencoded' },// 使用post时，这里的header不能是application/json
+          success: res => {
+          console.log('用户登录/注册状态', res.data.msg)
+          console.log('return data', res.data.data)
+          this.globalData.isFirstCode = res.data.code
+          this.globalData.session = res.data.data.session
+          console.log('session', this.globalData.session)              
+          //var that = this
+          console.log(this)
+          },
+          fail: function(e){
+          console.log('登陆出错')
+         }
+
+       })
+     }
+      
+  })
+
+
+

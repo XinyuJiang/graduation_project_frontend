@@ -1,164 +1,60 @@
-/* pages/navigation/navigation.wxss */
+/**index.wxss**/
 
 page {
   background: rgb(255, 255, 255); /* 标准的语法 */
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
-.swiper-image {
+.title {
+  font-size: 50rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
+  height: 100%;
+  padding-top:100rpx;
+
 }
 
-.swiper-item {
-  display: block;
-  height: 155px;
-}
-
-.swiper-tab {
+.description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  padding-top: 0px;
-  /* border-bottom: 2rpx solid #ccc; */
-  text-align: center;
-  height: 75rpx;
-  line-height: 65rpx;
+  height: 100%;
+  padding-top:30rpx;
+  color:gray;
+  padding-bottom:50rpx;
+}
+
+.imageview {
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.buttons {
   display: flex;
   flex-flow: row;
-  background-color: #fff;
-  justify-content: space-between;
-  font-size: 16px;
-  z-index: 500;
-  position: relative;
 }
 
-.swiper-tab-fixed{
-  position: fixed;
-  top:0px;
-}
-
-.swiper-tab-item {
-  width: 30%;
-  color: #f2b49a;
-  border-radius: 25px;
-  background-color: #fff;
-  font-weight: bold;
-}
-
-.active {
-  color: #fff;
+.prediction {
+  width:45%;
   background-color: #f2b49a;
-  font-size: 16px;
-  font-weight: bold;
-  /*  padding-bottom:10px; */
-  border-bottom: 1.5px solid #e8cbc0;
+  margin-top: 75rpx;
+  padding-right: 10rpx;
+  color: #5c5e63;
 }
 
-.show {
-  display: block;
-}
-
-.hidden {
-  display: none;
-}
-
-/*冥想部分*/
-
-.container1 {
-  background-color: rgb(255, 255, 255);
-  padding: 20rpx 0;
-  width: 100%;
-}
-
-.container2 {
-  justify-content: center;
-  display: flex;
-  text-align: center;
-  flex-flow: wrap;
-  width: 94%;
-  margin-left: 3%;
-}
-
-.group {
-  height: 200px;
-  width: 45%x;
-  align-items: center;
-  margin: auto;
-}
-
-.audioarea {
-  height: 130px;
-  width: 130px;
-  border-radius: 5px;
-  margin: auto;
-  background-size: cover;
-  background-repeat: no-repeat;
-  box-shadow: 3px 3px 3px rgb(231, 230, 230);
-}
-
-.audioarea:active {
-  background-color: rgba(235, 235, 235, 0.171);
-}
-
-.textclass {
-  position: relative;
-  width: 130px;
-  max-width: 80%;
-  padding-top: 8px;
-  margin: auto;
-  color: rgb(68, 68, 68);
-  font-size: 14px;
-}
-
-.play {
-  width: 20px;
-  height: 20px;
-  position: relative;
-  left: -30%;
-  top: 100px;
-}
-
-.button-everydayTalk{
-  position: fixed;
-  height: 60px;
-  width: 60px;
-  left: 300px;
-  top: 470px;
-  z-index: 500;
-}
-
-
-.VerticalNav.nav {
-  width: 210rpx;
-  white-space: initial;
-}
-
-.VerticalNav.nav .cu-item {
-  width: 100%;
-  text-align: center;
-  background-color: #fff;
-  margin: auto;
-  border: none;
-  height: 40px;
-  position: relative;
-}
-
-.VerticalNav.nav .cu-item.cur {
-  background-color: #f1f1f1;
-}
-.VerticalNav.nav .cu-item.cur::after {
-  content: "";
-  width: 8rpx;
-  height: 20rpx;
-  border-radius: 10rpx 0 0 10rpx;
-  position: absolute;
-  background-color: currentColor;
-  top: 0;
-  right: 0rpx;
-  bottom: 0;
-  margin: auto;
-}
-.VerticalBox{
-  display: flex;
-}
-.VerticalMain{
-  background-color: #f1f1f1;
-}
+.prediction_2{
+  width:45%;
+  background-color: #f2b49a;
+  margin-top: 75rpx;
+  padding-left: 10rpx;
+  color: #5c5e63;
+  }

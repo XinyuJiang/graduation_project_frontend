@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<view class="container">
+  	<camera wx:if='{{isShowCamera}}' device - position="width" flash="off" style="width:{{414}}px; height:{{896}}px;">
+  		<cover-view class='camerabgImage-view'>
+  			<cover-image class='bgImage' src='{{"../../img/vehicle/biankuang.png"}}'> </cover-image>
+  			<cover-view class='cameracenter-view' style='top:{{"70%"}}'>请将人脸对准边框</cover-view>
+		 	<!-- 拍照按钮 -->  
+		 	<cover-view class='camerabotton-view' style='bottom:{{"60px"}}'>
+		 		<cover-image class='takephoto' src='../../img/vehicle/paizhao.png' bindtap='takePhotoAction'></cover-image>
+			</cover-view>
+		</cover-view>
+	</camera>
+
+</view>

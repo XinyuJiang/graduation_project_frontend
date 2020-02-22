@@ -1,0 +1,93 @@
+/**index.wxss**/
+
+page {
+  background: rgb(255, 255, 255);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.takephoto {
+  margin-top: 40rpx;
+  height: 140rpx;
+  width: 100%;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: none;
+  border-right: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: all 300ms ease;
+}
+
+.chat-type-box, .tunnel-text {
+  width: 100%;
+  line-height: 52px;
+  font-size: 34rpx;
+  color: #f2b49a;
+}
+
+
+.camerabgImage-view{
+  height: 100%;
+  width: 100%;
+  position:absolute;
+}
+.bgImage{
+  width: 100%;
+  height: 60%;
+  position: absolute;
+}
+ 
+.cameratop-view1, .cameratop-view2{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+ 
+  font-family: PingFangSC-Medium;
+  font-size: 36rpx;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  text-align: center;
+}
+ 
+.cameracenter-view{
+  height: 44rpx;
+  width: 100%;
+  position: absolute;
+ 
+  font-family: PingFangSC-Medium;
+  font-size: 32rpx;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  text-align: center;
+}
+ 
+/* 底部 */
+.camerabotton-view{
+  height: 200rpx;
+  width: 100%;
+  position:absolute;
+ 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.cancelphoto{
+  width: 50rpx;
+  height: 50rpx;
+}
+.takephoto{
+  width: 132rpx;
+  height: 132rpx;
+}
+.skipphoto{
+  font-family: PingFangSC-Regular;
+  font-size: 32rpx;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  text-align: center;
+}

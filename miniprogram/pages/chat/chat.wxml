@@ -1,8 +1,8 @@
 <!--index.wxml-->
 <view class="container">
-<view class="chat">
-    <button class='chat-type-box' open-type='contact'>
-      <text>在线问诊</text>
-    </button>
-  </view>
+	<view class="chat">
+    	<button class='chat-type-box' open-type='contact'>
+      		<text>在线问诊</text>
+    	</button>
+  	</view>
 </view>
